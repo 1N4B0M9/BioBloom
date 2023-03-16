@@ -9,7 +9,25 @@
 
 </head>
 <body>
-    <h1 class = "title">What is Bio Diversity?</h1>
+    <div class = "button-cont">
+    <button id = "p1">Click me!</button>
+    <button id = "p2">Click me!</button>
+    <button id = "p3">Click me!</button>
+    </div>
+    <script>
+        const b1 = document.querySelector('#p1');
+        const b2 = document.querySelector('#p2');
+        const b3 = document.querySelector('#p3');
 
+        b1.addEventListener('click', () => {
+            b1.classList.add('clicked');
+        });
+        b2.addEventListener('click', () => {
+            b2.classList.add('clicked');
+        });
+        b3.addEventListener('click', () => {
+            b3.classList.add('clicked');
+        });
+        </script>
 </body>
 </html>
